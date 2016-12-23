@@ -23,10 +23,6 @@ Route::get('/asset', function () {
     return view('asset');
 });
 
-Route::get('/sw', function () {
-    return view('sw');
-});
-
 
 Auth::routes();
 
@@ -39,6 +35,8 @@ Route::post('/home', 'HomeController@addTicket');
 Route::get('/home', 'HomeController@ticketList');
 
 Route::get('/ticketing', 'HomeController@ticketList');
+
+Route::get('/editTicket', 'TicketController@editTicket');
 
 Route::get('/updateTicket', 'TicketController@updateTicket');
 

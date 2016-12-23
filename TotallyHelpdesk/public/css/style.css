@@ -2,7 +2,7 @@ body {
 	background-image: url("/img/background.jpg");
 }
 
-.superlogo {
+.logo {
 	margin-left: -63px;
 }
 
@@ -22,7 +22,7 @@ body {
 
 .chatbox {
 	margin-left: 960px;
-	margin-top: -535px;
+	margin-top: -687px;
 	padding-top: 5px;
 	padding-right: 5px;
 	padding-left: 5px;

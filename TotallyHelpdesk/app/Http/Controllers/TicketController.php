@@ -68,6 +68,15 @@ class TicketController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    public function editTicket(Request $request)
+    {
+        $affected = DB::update('update ticketing SET problem = concat(concat(problem, NOW()), ?) WHERE ticketNumber = ?', [$request->input('edit'), $request->input('ticketNumber')]);
+
+        return redirect('/home');
+    }
+
+
     public function updateTicket(Request $request)
     {
         DB::table('completed')

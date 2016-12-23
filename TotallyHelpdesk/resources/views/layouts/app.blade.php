@@ -36,7 +36,8 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <img class="superlogo" src="img/superlogo.jpg" width=75px height=55px></div>
+                    <img class="logo" src="img/jedi.png" width=52px height=52px></div>
+
                     <a class="navbar-brand" href="{{ url('/') }}">
                         Totally Helpdesk
                     </a>
