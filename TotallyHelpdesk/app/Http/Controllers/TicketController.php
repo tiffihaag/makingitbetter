@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Ticketing;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
@@ -13,10 +13,14 @@ class TicketController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-      //
-    }
+    // public function index()
+    // {
+    //     $tickets = App\Ticketing::all();
+
+    //     foreach ($tickets as $tickets) {
+    //         echo $tickets->name;
+    //     }
+    // }
 
     /**
      * Show the form for creating a new resource.
@@ -45,10 +49,13 @@ class TicketController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-       //
-    }
+    // public function show($id)
+    // {
+    //     $rows = ticketNumber::get(); // Get all users from the database
+    //     $table = Table::create($rows); // Generate a Table based on these "rows"
+
+    //     return view('ticketNumber.index', ['tickets' => $tickets]);
+    // }
 
     /**
      * Show the form for editing the specified resource.
